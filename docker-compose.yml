@@ -1,0 +1,9 @@
+version: '2.2'
+services:
+    acetv:
+        build: .
+        ports:
+            - 8000:8000
+        mem_limit: 256m
+        restart: always
+        privileged: true
